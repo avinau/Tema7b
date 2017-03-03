@@ -21,7 +21,11 @@ public class Principal {
 		
 		Empleados Empleado;
 		
+		Administrativos Administrativo;
+		
 		Empleados Empleados[] = new Empleados[numEmpleados];
+		
+		Administrativos Administrativos[] = new Administrativos[numAdministrativos];
 
 		while (contador<numEmpleados){
 		
@@ -36,11 +40,22 @@ public class Principal {
 		
 		contador=0;
 		
+		while (contador<numAdministrativos){
+			
+			Administrativo = new Administrativos();
+			
+			Administrativo.pedirTodosDatos();
+			
+			Administrativos[contador] = Administrativo;
+			
+			contador++;
+		}
 		
 		
 		
 		
 		
+		contador=0;
 		while (contador<numEmpleados){
 			
 			Empleados[contador].imprimirTodosDatos();
@@ -48,6 +63,13 @@ public class Principal {
 			contador++;
 		}
 		
+		
+		while (contador<numAdministrativos){
+			
+			Administrativos[contador].imprimirTodosDatos();
+			
+			contador++;
+		}
 	}
 
 }

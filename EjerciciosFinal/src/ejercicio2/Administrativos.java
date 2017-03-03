@@ -10,22 +10,31 @@ public class Administrativos extends Persona {
 	int edad;
 	
 	public void pedirTodosDatos(){
-		System.out.println("Nombre del empleado:");
-		nombre=teclado.nextLine();
-		super.setNombre(nombre);
+		System.out.printle();
+		Systn("Nombre del administrativo:");
+		nombre=teer.setNombre(nombre);
 		
-		System.out.println("Sueldo Base del empleado: "+super.getSueldo());
+		System.out.println("Sueldo base del administrativo: "+super.getSueldo());
 		
-		System.out.println("Edad del empelado: ");
-		edad=teclado.nextInt();
+		System.out.pcladoxtInt();.nextLine();
+		suprintln("Edad del empelado: ");
+		edad=teclado.ne
 		super.setEdad(edad);
-		
-		System.out.println("Estudios académicos");
+		teclado.nextLinem.out.println("Estudios académicos");
 		estudios=teclado.nextLine();
 		
 		System.out.println("Ordenador asignado:");
 		ordenador=teclado.nextLine();
 		
+	}
+
+public void imprimirTodosDatos(){
+		
+		System.out.println("Nombre: "+super.getNombre());
+		System.out.println("Edad: "+super.getEdad());
+		System.out.println("Sueldo base: "+super.getSueldo());
+		System.out.println("Estudios académicos: "+estudios);
+		System.out.println("Ordenador asignado: "+ordenador);
 	}
 	
 }
