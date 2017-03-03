@@ -11,10 +11,13 @@ public class Principal {
 		
 		Scanner teclado = new Scanner (System.in);
 		
-		int numEmpleados=0,contador=0;
+		int numEmpleados=0,contador=0,numAdministrativos=0;
 		
 		System.out.println("Numeros de empleados que desea crear:");
 		numEmpleados=teclado.nextInt();
+		
+		System.out.println("Numero de administrativos que desa crear:");
+		numAdministrativos=teclado.nextInt();
 		
 		Empleados Empleado;
 		
@@ -32,6 +35,11 @@ public class Principal {
 		}
 		
 		contador=0;
+		
+		
+		
+		
+		
 		
 		while (contador<numEmpleados){
 			
